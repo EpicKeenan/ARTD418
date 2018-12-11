@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keenan Dailey - Resources</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="icon" href="../img/icon.png" type="image/png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <script src="../js/page_fade.js"></script>
+        <div class='navigation'>
+            <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+            </nav>
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="../index.html">Home</a>
+<!--                <a href="#">Research Philosophy</a>-->
+            </div>
+
+            <script>
+                function openSlideMenu(){
+                  document.getElementById('side-menu').style.width = '250px';
+                  document.getElementById('main').style.marginLeft = '250px';
+                }
+
+                function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width = '0';
+                  document.getElementById('main').style.marginLeft = '0';
+                }
+            </script>
+        </div>
+             
+             
+        <div class='wrapper'>
+            
+            <canvas></canvas>
+            
+            <div class = 'title'>
+                
+                <ul>
+                    <li class='listresource'><h4 class='h4resource'><a href="https://www.youtube.com/watch?v=EO6OkltgudE" target="_blank">HTML Canvas Tutorial</a></h4><iframe width="200" height="100" align = 'left' src="https://www.youtube.com/embed/EO6OkltgudE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class='resource'>I wanted to share with you all an amazing tutorial series that I found on youtube  that teaches coding html <br> canvas elements using javascript. I personally feel as  though this is an amazing tutorial series for anyone who <br> is looking into coding website interaction.</p></li>
+                    
+                    <li class='listresource'><h4 class='h4resource'><a href="https://color.adobe.com/explore/?filter=most-popular&time=all" target="_blank">Adobe Color Picker</a></h4><img src="../img/adobe_color_picker.jpg" alt="Smiley face" height="120" width="200" align = "left"><p class='resource'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus, ante et congue varius, nisl dolor <br> semper leo, ut euismod nibh libero quis lorem. Nullam urna enim, dignissim eget placerat sit amet, porta et <br> nunc. Donec ut posuere urna. Donec a nunc ut tortor sagittis scelerisque.</p></li>
+                    
+                    <li class='listresource'><h4 class='h4resource'><a href="https://fonts.google.com" target="_blank">Google Fonts</a></h4><img src="../img/googlefonts.png" alt="Smiley face" height="100" width="200" align = "left"><p class='resource'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus, ante et congue varius, nisl dolor <br> semper leo, ut euismod nibh libero quis lorem. Nullam urna enim, dignissim eget placerat sit amet, porta et <br> nunc. Donec ut posuere urna. Donec a nunc ut tortor sagittis scelerisque.</p></li>
+<!--                    <li>Research Philosophy</li>-->
+                </ul>
+            </div>
+            
+            <div class='footer'>
+
+                <h4><a href="../index.html" id='home'>Home</a></h4>
+                <h5>Copyright @ 2018 Keenan Dailey</h5>
+            </div>
+            <script src="../js/canvas.js"></script>
+        </div>
+        
+        
+        
+         
+    </body>
+</html>              

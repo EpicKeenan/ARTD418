@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keenan Dailey - Projects</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="icon" href="../img/icon.png" type="image/png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <script src="../js/page_fade.js"></script>
+        <div class='navigation'>
+            <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+            </nav>
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="../index.html">Home</a>
+<!--                <a href="#">Research Philosophy</a>-->
+            </div>
+
+            <script>
+                function openSlideMenu(){
+                  document.getElementById('side-menu').style.width = '250px';
+                  document.getElementById('main').style.marginLeft = '250px';
+                }
+
+                function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width = '0';
+                  document.getElementById('main').style.marginLeft = '0';
+                }
+            </script>
+        </div>
+             
+             
+        <div class='wrapper'>
+            
+            <canvas></canvas>
+            
+            <div class = 'title'>
+                
+                <ul>
+                    <li class='listresource'><h4 class='h4resource'><a href="https://www.youtube.com/watch?v=yNh3m4oZMGo&t=" target="_blank">Greene</a></h4><iframe width="200" height="100" align = 'left' src="https://www.youtube.com/embed/yNh3m4oZMGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class='resource'>This film is a post-black film created by a black student artist at the University of Illinois and sports an all black <br>cast. The film is one that seeks to pull the viewer into a densely packed emotional roller-coaster ride and leave them both overwhelmed<br> and astounded. A film that seeks to analyze love, loss, depression, mental deterioration, and spirituality</p></li>
+                    
+                    <li class='listresource'><h4 class='h4resource'><a href="https://www.instagram.com/p/BiXXRD5nhVr/" target="_blank">Fortune 500</a></h4><img src="../img/fortune_500.JPG" alt="Smiley face" height="120" width="200" align = "left"><p class='resource'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus, ante et congue varius, nisl dolor <br> semper leo, ut euismod nibh libero quis lorem. Nullam urna enim, dignissim eget placerat sit amet, porta et <br> nunc. Donec ut posuere urna. Donec a nunc ut tortor sagittis scelerisque.</p></li>
+                    
+                    <li class='listresource'><h4 class='h4resource'><a href="https://keenandailey.itch.io/boxithon" target="_blank"><br> Boxithon</a></h4><img src="../img/boxithon.JPG" alt="Smiley face" height="100" width="200" align = "left"><p class='resource'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus, ante et congue varius, nisl dolor <br> semper leo, ut euismod nibh libero quis lorem. Nullam urna enim, dignissim eget placerat sit amet, porta et <br> nunc. Donec ut posuere urna. Donec a nunc ut tortor sagittis scelerisque.</p></li>
+<!--                    <li>Research Philosophy</li>-->
+                </ul>
+            </div>
+            
+            <div class='footer'>
+
+                <h4><a href="../index.html" id='home'>Home</a></h4>
+                <h5>Copyright @ 2018 Keenan Dailey</h5>
+            </div>
+            <script src="../js/canvas.js"></script>
+        </div>
+        
+        
+        
+         
+    </body>
+</html>              

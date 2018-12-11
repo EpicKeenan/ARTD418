@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keenan Dailey - Research</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="icon" href="../img/icon.png" type="image/png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <script src="../js/page_fade.js"></script>
+        <div class='navigation'>
+            <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+            </nav>
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="../index.html">Home</a>
+<!--                <a href="#">Research Philosophy</a>-->
+            </div>
+
+            <script>
+                function openSlideMenu(){
+                  document.getElementById('side-menu').style.width = '250px';
+                  document.getElementById('main').style.marginLeft = '250px';
+                }
+
+                function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width = '0';
+                  document.getElementById('main').style.marginLeft = '0';
+                }
+            </script>
+        </div>
+             
+             
+        <div class='wrapper'>
+            
+            <canvas></canvas>
+            
+            <div class = 'title'>
+                <p>Keenan Elijah Dailey ( /KEY-nan/ ; born July 7, 1995) is an American Graphic Designer, Filmmaker, Illustrator, Producer, Singer-Songwriter and Actor <br> studying Graphic Design at University of Illinois at Urbana-Champaign.Dailey is both an artist and researcher of aesthetic. Through his artistic exploration Dailey seeks <br> to uncover and unearth the hidden potential within humanistic empathy by way of the creation of sensorial experiences of any and all medium. Dailey has not shied away from <br> any means within the digital space in terms of getting his point across weather it be through Graphic Design, Film Production, Music Production, Videogame Development<br>, Digital Interactivity and so on and so forth.</p>
+
+            </div>
+            
+            <div class='footer'>
+
+                <h4><a href="../index.html" id='home'>Home</a></h4>
+                <h5>Copyright @ 2018 Keenan Dailey</h5>
+            </div>
+            <script src="../js/canvas.js"></script>
+        </div>
+        
+        
+        
+         
+    </body>
+</html>              

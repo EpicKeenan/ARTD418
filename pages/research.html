@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keenan Dailey - Research</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="icon" href="../img/icon.png" type="image/png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <script src="../js/page_fade.js"></script>
+        <div class='navigation'>
+            <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+
+            </nav>
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="../index.html">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">Conferences</a>
+                <a href="research/abstract.html">Abstract</a>
+<!--                <a href="#">Research Philosophy</a>-->
+            </div>
+
+            <script>
+                function openSlideMenu(){
+                  document.getElementById('side-menu').style.width = '250px';
+                  document.getElementById('main').style.marginLeft = '250px';
+                }
+
+                function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width = '0';
+                  document.getElementById('main').style.marginLeft = '0';
+                }
+            </script>
+        </div>
+             
+             
+        <div class='wrapper'>
+            
+            <canvas></canvas>
+            
+            <div class = 'title'>
+                <p>I am currently studying the <b>virtuality of new media</b> because I want to find out the ways in which <b>human individuals</b> are <b>emotionally dependent</b> on <b>simulated perceptual stimuli</b>, <i>in order to <br> understand how to utilize, alter, and create virtual stimuli that more accurately work on manipulation influence and persuasion involving emotional dependencies.</i>
+</p>
+                <ul>
+                    <li class='research'><a href="#">Articles</a></li>
+                    <li class='research'><a href="#">Conferences</a></li>
+                    <li class='research'><a href="research/abstract.html">Abstract</a></li>
+<!--                    <li>Research Philosophy</li>-->
+                </ul>
+            </div>
+            
+            <div class='footer'>
+
+                <h4><a href="../index.html" id='home'>Home</a></h4>
+                <h5>Copyright @ 2018 Keenan Dailey</h5>
+            </div>
+            <script src="../js/canvas.js"></script>
+        </div>
+        
+        
+        
+         
+    </body>
+</html>              
